@@ -106,3 +106,8 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 	      - MT evaluation metric (Ref: Lo et.al 2014)
      - Notes:
 	    - Crosslingual Embedding Mapping < MT + monolingual features 
+
+## 5-arXiv16-Facebook-Key-Value Memory Networks for Directly Reading Documents
+## 6-ACL16-BIT-CSE Conceptual Sentence Embeddings based on Attention Model
+## 7-ACL16-Stanford-A Fast Unified Model for Parsing and Sentence Understanding
+## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
