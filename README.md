@@ -111,3 +111,7 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 ## 6-ACL16-BIT-CSE Conceptual Sentence Embeddings based on Attention Model
 ## 7-ACL16-Stanford-A Fast Unified Model for Parsing and Sentence Understanding
 ## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
+## 9-ACL16-FDU-Deep Fusion LSTMs for Text Semantic Matching
+## 10-ICLR16-DeepMind-GRID LONG SHORT-TERM MEMORY
+## 11-ICLR16-TTIC-TOWARDS UNIVERSAL PARAPHRASTIC SENTENCE EMBEDDINGS
+## 12-arXiv16-Learning Efficient Algorithms with Hierarchical Attentive Memory
