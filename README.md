@@ -107,11 +107,58 @@ eg: 0-ACL16-Ng-Paper_title.pdf
      - Notes:
 	    - Crosslingual Embedding Mapping < MT + monolingual features 
 
-## 5-arXiv16-Facebook-Key-Value Memory Networks for Directly Reading Documents
-## 6-ACL16-BIT-CSE Conceptual Sentence Embeddings based on Attention Model
-## 7-ACL16-Stanford-A Fast Unified Model for Parsing and Sentence Understanding
-## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
-## 9-ACL16-FDU-Deep Fusion LSTMs for Text Semantic Matching
-## 10-ICLR16-DeepMind-GRID LONG SHORT-TERM MEMORY
-## 11-ICLR16-TTIC-TOWARDS UNIVERSAL PARAPHRASTIC SENTENCE EMBEDDINGS
 ## 12-arXiv16-Learning Efficient Algorithms with Hierarchical Attentive Memory
+   [PDF](https://arxiv.org/abs/1602.03218),
+   !Bib
+  
+  - **Related Work**
+    - Memory architectures based on attention
+    - Memory architectures based on data structures
+    - Memory architectures based on pointers
+    - Parallel memory architectures
+  - **Model**
+    - Notation
+      - input: sequence {x1, x2, xn}
+      - output: sequence {y1, y2, ym}  xi, yi \in {0, 1}^b
+    - Model Architecture
+       <img src="figs/12a.png" title="" width=80%/>
+       <img src="figs/12b.png" title="" width=40%/> <img src="figs/12c.png" title="" width=45%/>
+       <img src="figs/12d.png" title="" width=40%/> <img src="figs/12e.png" title="" width=45%/>
+    - Training
+      - REINFORCEMENT LEARNING
+    - Experiments
+       <img src="figs/12f.png" title="" width=60%/>
+
+## 13-ICML15-Ioffe and Szegedy-Batch Normalization Accelerating Deep Network Training by Reducing Internal Covariate Shift
+   [PDF](http://jmlr.org/proceedings/papers/v37/ioffe15.pdf)
+   [Bib](https://scholar.googleusercontent.com/scholar.bib?q=info:uA9rihP_fjYJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWBquH4zt-SUYooTjrvKd__h8Hvdeypbf&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1)
+   [Video](https://www.microsoft.com/en-us/research/video/symposium-deep-learning-sergey-ioffe/)
+
+   - Internal covariate shift
+     - Covariate shift: Changes of input distribution to a learning system
+     - Internal covariate shift: Extension to the deep network
+   - Reducing internal covariate shift
+     - Whitening the inputs to each layer:
+       However, gradient descent does not take into account the normalization
+     - Mean and variance of an activation depend on model parameters
+   - Batch normalizing transform
+   	 <img src="figs/13a.png" title="" width=60%/>
+
+## 9-ACL16-FDU-Deep Fusion LSTMs for Text Semantic Matching
+
+  **Attention Matrix on RNN** 
+
+## 5-arXiv16-Facebook-Key-Value Memory Networks for Directly Reading Documents
+
+## 6-ACL16-BIT-CSE Conceptual Sentence Embeddings based on Attention Model
+
+## 7-ACL16-Stanford-A Fast Unified Model for Parsing and Sentence Understanding
+
+## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
+
+## 10-ICLR16-DeepMind-GRID LONG SHORT-TERM MEMORY
+
+## 11-ICLR16-TTIC-TOWARDS UNIVERSAL PARAPHRASTIC SENTENCE EMBEDDINGS
+
+
+   - 
