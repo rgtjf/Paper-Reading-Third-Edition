@@ -121,12 +121,16 @@ eg: 0-ACL16-Ng-Paper_title.pdf
       - input: sequence {x1, x2, xn}
       - output: sequence {y1, y2, ym}  xi, yi \in {0, 1}^b
     - Model Architecture
-       <img src="figs/12a.png" title="" width=80%/>
-       <img src="figs/12b.png" title="" width=40%/> <img src="figs/12c.png" title="" width=45%/>
-       <img src="figs/12d.png" title="" width=40%/> <img src="figs/12e.png" title="" width=45%/>
-    - Training
+    
+<img src="figs/12a.png" title="" width=80%/>
+
+<img src="figs/12b.png" title="" width=40%/> <img src="figs/12c.png" title="" width=45%/>
+<img src="figs/12d.png" title="" width=40%/> <img src="figs/12e.png" title="" width=45%/>
+    
+	- Training
       - REINFORCEMENT LEARNING
     - Experiments
+    
        <img src="figs/12f.png" title="" width=60%/>
 
 ## 13-ICML15-Ioffe and Szegedy-Batch Normalization Accelerating Deep Network Training by Reducing Internal Covariate Shift
@@ -142,7 +146,8 @@ eg: 0-ACL16-Ng-Paper_title.pdf
        However, gradient descent does not take into account the normalization
      - Mean and variance of an activation depend on model parameters
    - Batch normalizing transform
-   	 <img src="figs/13a.png" title="" width=60%/>
+   
+<img src="figs/13a.png" title="" width=60%/>
 
 ## 9-ACL16-FDU-Deep Fusion LSTMs for Text Semantic Matching
 
