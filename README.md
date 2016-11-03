@@ -27,7 +27,9 @@ eg: 0-ACL16-Ng-Paper_title.pdf
     - **Question Module**
     - **Episodic Memory Module**
     - **Answer Module**
+
    <img src="figs/1a.png" title="Dynamic Memory Networks V.S. Memory Networks" width=80%/>
+
   - [**Dynamic Memory Networks V.S. Memory Networks**]
     1. Sentence Encoding: RNN, Position-Encoding
     2. Dynamic: Episodic Memory Module(When attention probbility is in the <EOS> position), Multi-Hops
@@ -127,10 +129,9 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 <img src="figs/12b.png" title="" width=40%/> <img src="figs/12c.png" title="" width=45%/>
 <img src="figs/12d.png" title="" width=40%/> <img src="figs/12e.png" title="" width=45%/>
     
-	- Training
-      - REINFORCEMENT LEARNING
-    - Experiments
-    
+   - Training
+     - REINFORCEMENT LEARNING
+   - Experiments
        <img src="figs/12f.png" title="" width=60%/>
 
 ## 13-ICML15-Ioffe and Szegedy-Batch Normalization Accelerating Deep Network Training by Reducing Internal Covariate Shift
