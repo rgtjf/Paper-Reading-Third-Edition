@@ -18,11 +18,11 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   [PDF](https://arxiv.org/abs/1506.07285),
   [!Bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/KumarISBEPOGS15)
   [Implement Blog](https://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/)
-  - [**Experiment Tasks and Datasets**]
+- [**Experiment Tasks and Datasets**]
     - Reading Comprehension (**bAbI**)
     - Sentiment Classification (**Stanford Sentiment TreeBank**)
     - Sequence Modeling - POS tagging (**WSJ-PTB**)
-  - [**Model**]
+- [**Model**]
     - **Input Module**
     - **Question Module**
     - **Episodic Memory Module**
@@ -30,29 +30,29 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 
    <img src="figs/1a.png" title="Dynamic Memory Networks V.S. Memory Networks" width=80%/>
 
-  - [**Dynamic Memory Networks V.S. Memory Networks**]
+-   [**Dynamic Memory Networks V.S. Memory Networks**]
     1. Sentence Encoding: RNN, Position-Encoding
     2. Dynamic: Episodic Memory Module(When attention probbility is in the <EOS> position), Multi-Hops
-  - [**Motivation for Memory Module**]:
-    > **Episodic Memory Module**: Given a collection of input representations, the episodic memory module chooses which parts of the inputs to focus on through the attention mechanism. It then produces a ”memory” vector representation taking into account the question as well as the previous memory. Each iteration provides the module with newly relevant information about the input. In other words, the module has the ability to retrieve new information, in the form of input representations, which were thought to be irrelevant in previous iterations. 
-  - [**Motivation for Dynamic Part**]:
-    >**Need for Multiple Episodes**: The iterative nature of this module allows it to attend to different inputs during each pass. It also allows for a type of transitive inference, since the first pass may uncover the need to retrieve additional facts. For instance, in the example in Fig. 3, we are asked Where is the football? In the first iteration, the model ought attend to sentence 7 (John put down the football.), as the question asks about the football. Only once the model sees that John is relevant can it reason that the second iteration should retrieve where John was. Similarly, a second pass may help for sentiment analysis as we show in the experiments section below.
- 
+-   [**Motivation for Memory Module**]:
+	> **Episodic Memory Module**: Given a collection of input representations, the episodic memory module chooses which parts of the inputs to focus on through the attention mechanism. It then produces a ”memory” vector representation taking into account the question as well as the previous memory. Each iteration provides the module with newly relevant information about the input. In other words, the module has the ability to retrieve new information, in the form of input representations, which were thought to be irrelevant in previous iterations. 
+-   [**Motivation for Dynamic Part**]:
+	>**Need for Multiple Episodes**: The iterative nature of this module allows it to attend to different inputs during each pass. It also allows for a type of transitive inference, since the first pass may uncover the need to retrieve additional facts. For instance, in the example in Fig. 3, we are asked Where is the football? In the first iteration, the model ought attend to sentence 7 (John put down the football.), as the question asks about the football. Only once the model sees that John is relevant can it reason that the second iteration should retrieve where John was. Similarly, a second pass may help for sentiment analysis as we show in the experiments section below.
+
 ## 2-ICLR15-Facebook-MEMORY NETWORKS
   [PDF](https://arxiv.org/abs/1410.3916),
   [!Bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/WestonCB14)
   [ppt](/files/2-icml2016-memnn-tutorial.pptx)
-  - [**Motivation**]
+- [**Motivation**]
     - Class of models that combine large memory with learning component that can read and write to it.
     - Incorporates reasoning with attention over memory (RAM).
     - long-term memory is required to read a story and then e.g. answer questions about it.
-  - [**Models**]
-  MemNNs have four component networks (which may or may not have shared parameters):
+- [**Models**]
+     MemNNs have four component networks (which may or may not have shared parameters):
     - **I**: (input feature map) convert incoming data to the internal feature representation.
     - **G**: (generalization) update memories given new input.
     - **O**: produce new output (in feature representation space) given the memories.
     - **R**: (response) convert output O into a response seen by the outside world.
-  - [**Some Memory Network- related Publications**]
+- [**Some Memory Network- related Publications**]
     - J. Weston, S. Chopra, A. Bordes. Memory Networks. ICLR 2015 (and arXiv:1410.3916).
     - S. Sukhbaatar, A. Szlam, J. Weston, R. Fergus. End-To-End Memory Networks. NIPS 2015 (and arXiv:1503.08895). 
     - J. Weston, A. Bordes, S. Chopra, A. M. Rush, B. van Merriënboer, A. Joulin, T. Mikolov. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks. arXiv:1502.05698. 
@@ -61,7 +61,7 @@ eg: 0-ACL16-Ng-Paper_title.pdf
     - F. Hill, A. Bordes, S. Chopra, J. Weston. The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations. arXiv:1511.02301.
     - J. Weston. Dialog-based Language Learning. arXiv:1604.06045. 
     - A. Bordes, Jason Weston. Learning End-to-End Goal-Oriented Dialog. arXiv:1605.07683.
-  - [**RAM Issues**]
+- [**RAM Issues**]
     - How to decide what to write and what not to write in the memory?
     - How to represent knowledge to be stored in memories?
     - Types of memory (arrays, stacks, or stored within weights of model), when they should be used, and how can they be learnt?
@@ -71,13 +71,13 @@ eg: 0-ACL16-Ng-Paper_title.pdf
     - How to incorporate forgetting/compression of information?
     - How to evaluate reasoning models? Are artificial tasks a good way? Where do they break down and real tasks are needed?
     - Can we draw inspiration from how animal or human memories work?
-  
+
 ## 3-Hierachical Memory Networks
   [PDF](https://arxiv.org/abs/1605.07427),
   !Bib
-  - [**Abstract**]
-  > Memory networks are neural networks with an explicit memory component that can be both read and written to by the network. The memory is often addressed in a soft way using a softmax function, making end-to-end training with backpropagation possible. However, this is not computationally scalable for applications which require the network to read from extremely large memories. On the other hand, it is well known that hard attention mechanisms based on reinforcement learning are challenging to train successfully. In this paper, we explore a form of hierarchical memory network, which can be considered as a hybrid between hard and soft attention memory networks. The memory is organized in a hierarchical structure such that reading from it is done with less computation than soft attention over a flat memory, while also being easier to train than hard attention over a flat memory. Specifically, we propose to incorporate Maximum Inner Product Search (MIPS) in the training and inference procedures for our hierarchical memory network. We explore the use of various state-of-the art approximate MIPS techniques and report results on SimpleQuestions, a challenging large scale factoid question answering task.
-  - [**Hierachical Memory Networks**]
+-   [**Abstract**]
+    > Memory networks are neural networks with an explicit memory component that can be both read and written to by the network. The memory is often addressed in a soft way using a softmax function, making end-to-end training with backpropagation possible. However, this is not computationally scalable for applications which require the network to read from extremely large memories. On the other hand, it is well known that hard attention mechanisms based on reinforcement learning are challenging to train successfully. In this paper, we explore a form of hierarchical memory network, which can be considered as a hybrid between hard and soft attention memory networks. The memory is organized in a hierarchical structure such that reading from it is done with less computation than soft attention over a flat memory, while also being easier to train than hard attention over a flat memory. Specifically, we propose to incorporate Maximum Inner Product Search (MIPS) in the training and inference procedures for our hierarchical memory network. We explore the use of various state-of-the art approximate MIPS techniques and report results on SimpleQuestions, a challenging large scale factoid question answering task.
+-   [**Hierachical Memory Networks**]
     - Memory: Memory cells are organized into groups. (Cluster)
     - Reader: HMN readers user soft attention only over a selected subset of the memory.
 
@@ -87,72 +87,98 @@ eg: 0-ACL16-Ng-Paper_title.pdf
   - 2-SemEval16-Ataman-Cross lingual Semantic Similarity Measurement Using Quality Estimation Features and Compositional Bilingual Word Embeddings
   - 3-SemEval16-Bicici-Predicting Semantic Similarity with Referential Translation Machines and Related Statistics
   - 4-SemEval16-Lo-Experiments in Crosslingual Semantic Textual Similarity
-  
   - [**Model**]
     - **1. Weighted Matrix Factorization (WMF)**
       - Related Work: 
-      	- monolingual weighted matrix factorization(Guo and Diab, 2012)
-      	- GloVe(pennington et.al;, 2014), Extend to Bilingual with shared factor(Shi et.al., 2015)
+        - monolingual weighted matrix factorization(Guo and Diab, 2012)
+        - GloVe(pennington et.al;, 2014), Extend to Bilingual with shared factor(Shi et.al., 2015)
       - Method:
-      	- A global bilingual loss function (b-WMF)
-      	- a monolingual loss function with explicit shared factor (x-WMF)
+        - A global bilingual loss function (b-WMF)
+        - a monolingual loss function with explicit shared factor (x-WMF)
       - Notes:
         - How to train? Classic Models
         - How to test? To generate vector representations for additional sentences after training, P is fixed and Q is calculated for the new sentences.
-   - **4. Crosslingual Embedding Mapping**
-     - Methood:
-	 	- flat lexical semantic features:
-	 	  - For each word in spanish, find the top 5 sim words in english according embedding which trained with word2vec
-	 	  - Average the most sim word with idf weight
-	 	- shallow structual semantic features:
-	      - MT evaluation metric (Ref: Lo et.al 2014)
-     - Notes:
-	    - Crosslingual Embedding Mapping < MT + monolingual features 
+    - **4. Crosslingual Embedding Mapping**
+      - Methood:
+        - flat lexical semantic features:
+          - For each word in spanish, find the top 5 sim words in english according embedding which trained with word2vec
+          - Average the most sim word with idf weight
+        - shallow structual semantic features:
+          - MT evaluation metric (Ref: Lo et.al 2014)
+    - Notes:
+      - Crosslingual Embedding Mapping < MT + monolingual features 
 
 ## 12-arXiv16-Learning Efficient Algorithms with Hierarchical Attentive Memory
    [PDF](https://arxiv.org/abs/1602.03218),
    !Bib
-  
-  - **Related Work**
+
+- **Related Work**
     - Memory architectures based on attention
     - Memory architectures based on data structures
     - Memory architectures based on pointers
     - Parallel memory architectures
-  - **Model**
+- **Model**
     - Notation
       - input: sequence {x1, x2, xn}
       - output: sequence {y1, y2, ym}  xi, yi \in {0, 1}^b
     - Model Architecture
-    
+
 <img src="figs/12a.png" title="" width=80%/>
 
 <img src="figs/12b.png" title="" width=40%/> <img src="figs/12c.png" title="" width=45%/>
 <img src="figs/12d.png" title="" width=40%/> <img src="figs/12e.png" title="" width=45%/>
-    
-   - Training
+
+-    Training
      - REINFORCEMENT LEARNING
-   - Experiments
-       <img src="figs/12f.png" title="" width=60%/>
+-    Experiments<img src="figs/12f.png" title="" width=60%/>
 
 ## 13-ICML15-Ioffe and Szegedy-Batch Normalization Accelerating Deep Network Training by Reducing Internal Covariate Shift
    [PDF](http://jmlr.org/proceedings/papers/v37/ioffe15.pdf)
    [Bib](https://scholar.googleusercontent.com/scholar.bib?q=info:uA9rihP_fjYJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWBquH4zt-SUYooTjrvKd__h8Hvdeypbf&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1)
    [Video](https://www.microsoft.com/en-us/research/video/symposium-deep-learning-sergey-ioffe/)
 
-   - Internal covariate shift
+- Internal covariate shift
      - Covariate shift: Changes of input distribution to a learning system
      - Internal covariate shift: Extension to the deep network
-   - Reducing internal covariate shift
+- Reducing internal covariate shift
      - Whitening the inputs to each layer:
        However, gradient descent does not take into account the normalization
      - Mean and variance of an activation depend on model parameters
-   - Batch normalizing transform
-   
+- Batch normalizing transform
+
 <img src="figs/13a.png" title="" width=60%/>
+
+## 10-ICLR16-DeepMind-GRID LONG SHORT-TERM MEMORY
+
+PDF, Bib
+
+<img src="figs/10a.png" title="" width=40%/>
+
+> Figure1: Blocks form the standard LSTM and those that form Grid LSTM networks of N = 1 and 2 dimensions. The dashed lines indicate identity transformations. The standard LSTM block does not have a memory vector in the vertical dimension; by contrast, the 2d Grid LSTM block has the memory vector m1 applied along the vertical dimension.
+
 
 ## 9-ACL16-FDU-Deep Fusion LSTMs for Text Semantic Matching
 
-  **Attention Matrix on RNN** 
+PDF, Bib
+
+<img src="figs/9a.png" title="" width=40%/>	  <img src="figs/9b.png" title="" width=40%/>
+
+- **[Grid-LSTM V.S. DF-LSTMs]**
+  -  If DF-LSTM just use the neighbor states, it can be regarded as grid LSTMs
+  -  Inspired by recent neural **memory network**, DF-LSTMs introduce two external memories to keep the history information, which can relieve the pressure on low-capacity internal memory.
+  -  DF-LSTMs use bilinear attention mechanism to address the location problem. 
+
+- [**Summary of Loss Functions**]
+  - Max-Margin Loss for Ranking Task
+  - Cross-entropy Loss for Classification Task
+  - What  
+
+## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
+
+PDF, Bib
+
+- [**ad**]
+
 
 ## 5-arXiv16-Facebook-Key-Value Memory Networks for Directly Reading Documents
 
@@ -160,11 +186,7 @@ eg: 0-ACL16-Ng-Paper_title.pdf
 
 ## 7-ACL16-Stanford-A Fast Unified Model for Parsing and Sentence Understanding
 
-## 8-arXiv16-FDU-Cached Long Short-Term Memory Neural Networks for Document-Level Sentiment Classification
-
-## 10-ICLR16-DeepMind-GRID LONG SHORT-TERM MEMORY
-
 ## 11-ICLR16-TTIC-TOWARDS UNIVERSAL PARAPHRASTIC SENTENCE EMBEDDINGS
 
 
-   - 
+- ​
