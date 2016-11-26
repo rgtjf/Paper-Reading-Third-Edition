@@ -1,6 +1,5 @@
 http://www.aclweb.org/anthology/D/D16/D16-1167.pdf Learning to Generate Textual Data
 http://www.aclweb.org/anthology/D/D16/D16-1173.pdf Deep Neural Networks with Massive Learned Knowledge Eric P.Xing
-
 http://www.aclweb.org/anthology/D/D16/D16-1215.pdf Vector-space models for PPDB paraphrase ranking in context
 http://www.aclweb.org/anthology/D/D16/D16-1229.pdf Bi-directional Attention with Agreement for Dependency Parsing
 http://www.aclweb.org/anthology/D/D16/D16-1238.pdf Cultural Shift or Linguistic Drift? Comparing Two Computational Measures of Semantic Change
@@ -11,9 +10,7 @@ http://www.aclweb.org/anthology/D/D16/D16-1063.pdf WordRank: Learning Word Embed
 http://www.aclweb.org/anthology/D/D16/D16-1043.pdf Comparing Data Sources and Architectures for Deep Visual Representation Learning in Semantics
 http://www.aclweb.org/anthology/D/D16/D16-1042.pdf Latent Tree Language Model
 http://www.aclweb.org/anthology/D/D16/D16-1024.pdf Attention-based LSTM Network for Cross-Lingual Sentiment Classification
-
 http://www.aclweb.org/anthology/D/D16/D16-1018.pdf Context-Dependent Sense Embedding
-
 http://www.aclweb.org/anthology/D/D16/D16-1023.pdf Learning Sentence Embeddings with Auxiliary Tasks for Cross-Domain Sentiment Classification
 
 ## Alignment
