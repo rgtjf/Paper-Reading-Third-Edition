@@ -2,7 +2,9 @@ http://www.aclweb.org/anthology/D/D16/D16-1167.pdf Learning to Generate Textual 
 http://www.aclweb.org/anthology/D/D16/D16-1173.pdf Deep Neural Networks with Massive Learned Knowledge Eric P.Xing
 http://www.aclweb.org/anthology/D/D16/D16-1215.pdf Vector-space models for PPDB paraphrase ranking in context
 http://www.aclweb.org/anthology/D/D16/D16-1229.pdf Bi-directional Attention with Agreement for Dependency Parsing
+
 http://www.aclweb.org/anthology/D/D16/D16-1238.pdf Cultural Shift or Linguistic Drift? Comparing Two Computational Measures of Semantic Change
+
 
 http://www.aclweb.org/anthology/D/D16/D16-1164.pdf MixKMeans: Clustering Question-Answer 
 http://www.aclweb.org/anthology/D/D16/D16-1137.pdf Sequence-to-Sequence Learning as Beam-Search Optimization
