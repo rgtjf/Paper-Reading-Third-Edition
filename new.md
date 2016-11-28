@@ -43,3 +43,6 @@ http://www.aclweb.org/anthology/D/D16/D16-1136.pdf Learning Crosslingual Word Em
 http://www.aclweb.org/anthology/D/D16/D16-1174.pdf De-Conflated Semantic Representations
 http://www.aclweb.org/anthology/D/D16/D16-1176.pdf Modelling Interaction of Sentence Pair with Coupled-LSTMs
 http://www.aclweb.org/anthology/D/D16/D16-1064.pdf Exploring Semantic Representation in Brain Activity Using Word Embeddings
+
+## More Strong Interaction
+
